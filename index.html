@@ -11,12 +11,14 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Stylesheet css -->
   <link rel="stylesheet" href="/css/style.css">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/96d9283950.js" crossorigin="anonymous"></script>
   <title>Depot</title>
 </head>
 
 <body>
   <!-- Contenedor  gral -->
-  <div class="container-fluid" id="contGral">
+  <div class="container-fluid px-0" id="contGral">
     <!-- comienzo header -->
     <!-- navbar principal mobile -->
     <div class="container" id="ContNavMobile">
@@ -46,7 +48,7 @@
       </nav>
     </div>
     <!-- imagen que se mueve -->
-    <div class="container-fluid" id="imgSlide">
+    <div class="container-fluid px-0" id="imgSlide">
       <!-- navbar principal fullscreen (dentro de imagen)-->
       <div class="container-fluid" id="ContNavFull">
         <nav class="navbar navbar-expand-md navbar-light" id="navbarfull">
@@ -77,7 +79,18 @@
               </li>
             </ul>
           </div>
-          <div class="col-3"></div>
+          <div class="col-3">
+            <div class="row justify-content-center">
+              <div class="col-6"></div>
+              <div class="col-6  d-flex justify-content-around  ">
+            <div class="row d-flex justify-content-between ">
+                <span class="text-white mr-2">Cart</span>
+                <span><i class="fas fa-cart-plus" style="color: white;"></i></span>
+              </div>
+            <span><i class="far fa-heart" style="color: white;"></i></span>
+          </div>
+          </div>
+        </div>
         </nav>
       </div>
       <!-- <h2 class="just text-white">The Best furniture is here</h2> -->
