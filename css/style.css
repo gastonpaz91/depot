@@ -1,5 +1,33 @@
 
-.container-fluid{
-    background-color: black;
+#contGral{
+    background-color: white ;
     height: 2000px;
+}
+#imglogo{
+    align-content: center;
+}
+#ContNav{
+    height: 75px;
+}
+#imgSlide{
+    height: 650px;
+    background-image: url(/img/slide-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#ContNavFull{
+    display: none;
+}
+#navbarfull{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+@media (min-width: 990px) { 
+    #ContNavMobile{
+        display: none;
+    }
+    #ContNavFull{
+        display: block;
+    }
 }
