@@ -1,6 +1,9 @@
-@media (max-width: 767.98px) { 
-    body {
 
-    }
+header {
+    position: fixed;
+    width: 100%;
+}
+header a {
+     text-decoration: none;
  }
  
