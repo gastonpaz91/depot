@@ -31,7 +31,7 @@
     text
 }
 
-@media (min-width: 990px) { 
+@media (min-width: 767.98px) { 
     #ContNavMobile{
         display: none;
     }
@@ -39,3 +39,8 @@
         display: block;
     }
 }
+@media (max-width: 767.98px) {
+#imgqsv1{
+        display: none;
+    }
+} 
