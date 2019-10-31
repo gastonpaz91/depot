@@ -12,7 +12,12 @@
 #imgSlide{
     height: 650px;
     background-image: url(/img/slide-img.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 #ContNavFull{
@@ -21,7 +26,10 @@
 #navbarfull{
     background-color: rgba(0, 0, 0, 0);
 }
-
+#textoimg{
+    text-align: center;
+    text
+}
 
 @media (min-width: 990px) { 
     #ContNavMobile{
