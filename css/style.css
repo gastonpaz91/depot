@@ -28,11 +28,10 @@
 }
 #textoimg{
     text-align: center;
-    text
 }
 
 @media (min-width: 767.98px) { 
-    #ContNavMobile{
+        #ContNavMobile{
         display: none;
     }
     #ContNavFull{
