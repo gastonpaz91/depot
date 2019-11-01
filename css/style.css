@@ -29,6 +29,9 @@
 #textoimg{
     text-align: center;
 }
+#imggde1{
+    background-image: url(/img/h6-product-46.jpg);
+}
 
 @media (min-width: 767.98px) { 
         #ContNavMobile{
