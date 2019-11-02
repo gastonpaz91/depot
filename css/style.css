@@ -64,7 +64,7 @@
     }
 } 
 #containerSuscribe {
-    text-align: center;
+    text-align: center;   
 }
 .buttonSuscribe {
     padding-top: 13px;
@@ -93,4 +93,7 @@
     box-sizing: border-box;
     height: 59px;
     
+}
+#subtituloSuscribir {
+    color: #929292;
 }
