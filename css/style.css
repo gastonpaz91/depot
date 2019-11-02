@@ -26,11 +26,28 @@
 #navbarfull{
     background-color: rgba(0, 0, 0, 0);
 }
-#textoimg{
-    text-align: center;
+
+.imgwh{
+    position: relative;
 }
-#imggde1{
-    background-image: url(/img/h6-product-46.jpg);
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.overlay:hover{
+    background-color: #0000009c;
+}
+
+.imgwh:hover .img-scale{
+    transform: scale(1.3);
+    transition: transform 1000ms;
+}
+
+.imgwh:hover{
+    overflow: hidden;
 }
 
 @media (min-width: 767.98px) { 
