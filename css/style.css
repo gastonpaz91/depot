@@ -46,3 +46,34 @@
         display: none;
     }
 } 
+#containerSuscribe {
+    text-align: center;
+}
+.buttonSuscribe {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border: none;
+    letter-spacing: .15em;
+    padding: 13px 46px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #080808;
+    font-weight: 700;    
+}
+.emailAddress {
+    width: 100%;
+    margin: 2px 0 15px;
+    padding: 20px 18px;    
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: inherit;
+    color: #929292;
+    background-color: transparent;
+    border: 1px solid #d3d3d3;
+    border-radius: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    height: 59px;
+    
+}
