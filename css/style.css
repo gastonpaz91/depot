@@ -42,8 +42,8 @@
 }
 
 .imgwh:hover .img-scale{
-    transform: scale(1.3);
-    transition: transform 1000ms;
+    transform: scale(1.07);
+    transition: transform 800ms;
 }
 
 .imgwh:hover{
