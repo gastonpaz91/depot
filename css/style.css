@@ -1,4 +1,4 @@
-
+/* Pagina principal */
 #contGral{
     background-color: white ;
     height: 2000px;
@@ -72,7 +72,15 @@
 #imgqsv1{
         display: none;
     }
+    #carrito{
+        display: none;
+    }
+    #login {
+        display: none;
+    }
 } 
+
+
 #containerSuscribe {
     text-align: center;   
 }
@@ -113,4 +121,17 @@
 .card-text {
     font-size: 13px;
     color: gray;
+}
+
+
+/* Our designs */
+#imgdesign{
+    background-image: url(/img/design1.jpg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
 }
