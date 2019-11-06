@@ -60,26 +60,6 @@
     border: 1px solid #d3d3d31c;
            
 }
-@media (min-width: 767.98px) { 
-        #ContNavMobile{
-        display: none;
-    }
-    #ContNavFull{
-        display: block;
-    }
-}
-@media (max-width: 767.98px) {
-#imgqsv1{
-        display: none;
-    }
-    #carrito{
-        display: none;
-    }
-    #login {
-        display: none;
-    }
-} 
-
 
 #containerSuscribe {
     text-align: center;   
@@ -123,6 +103,26 @@
     color: gray;
 }
 
+/* @ media */
+@media (min-width: 767.98px) { 
+        #ContNavMobile{
+        display: none;
+    }
+    #ContNavFull{
+        display: block;
+    }
+}
+@media (max-width: 767.98px) {
+#imgqsv1{
+        display: none;
+    }
+    #carrito{
+        display: none;
+    }
+    #login {
+        display: none;
+    }
+} 
 
 /* Our designs */
 #imgdesign{
