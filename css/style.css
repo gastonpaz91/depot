@@ -1,18 +1,23 @@
 /* Pagina principal */
-#contGral{
-    background-color: white ;
+
+#contGral {
+    background-color: white;
     height: 2000px;
 }
-#imglogo{
+
+#imglogo {
     align-content: center;
 }
-#ContNav{
+
+#ContNav {
     height: 75px;
 }
-#ContNavgral{
+
+#ContNavgral {
     height: 120px;
 }
-#imgSlide{
+
+#imgSlide {
     height: 650px;
     background-image: url(/img/slide-img.jpg);
     display: flex;
@@ -23,50 +28,53 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-#ContNavFull{
+
+#ContNavFull {
     display: none;
 }
-#navbarfull{
+
+#navbarfull {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.imgwh{
+.imgwh {
     position: relative;
 }
-.overlay{
+
+.overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
 }
 
-.overlay:hover{
+.overlay:hover {
     background-color: #0000009c;
 }
 
-.imgwh:hover .img-scale{
+.imgwh:hover .img-scale {
     transform: scale(1.07);
     transition: transform 800ms;
 }
 
-.imgwh:hover{
+.imgwh:hover {
     overflow: hidden;
 }
 
-#carrito{
+#carrito {
     position: fixed;
     top: 50%;
     right: 0%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);    
+    transform: translateY(-50%);
     border: 1px solid #d3d3d31c;
-           
 }
 
 #containerSuscribe {
-    text-align: center;   
+    text-align: center;
 }
+
 .buttonSuscribe {
     padding-top: 13px;
     padding-bottom: 13px;
@@ -76,12 +84,13 @@
     font-size: 12px;
     color: #fff;
     background-color: #080808;
-    font-weight: 700;    
+    font-weight: 700;
 }
+
 .emailAddress {
     width: 84%;
     margin: 2px 0 15px;
-    padding: 20px 18px;    
+    padding: 20px 18px;
     font-size: 14px;
     line-height: 21px;
     font-weight: inherit;
@@ -93,92 +102,153 @@
     -webkit-appearance: none;
     box-sizing: border-box;
     height: 59px;
-    
 }
+
 #subtituloSuscribir {
     color: #929292;
 }
+
 .card-title {
     font-size: 18px;
 }
+
 .card-text {
     font-size: 13px;
-    color: gray;   
+    color: gray;
 }
+
 .footerText p {
     margin-bottom: 1rem !important;
 }
+
 .card-body a {
     text-decoration: none;
 }
+
 .contenedor {
     position: relative;
 }
-.img-text{
+
+.img-text {
     bottom: 10px;
     position: absolute;
     width: 90%;
     text-align: center;
 }
 
+
 /* @ media */
-@media (min-width: 767.98px) { 
-        #ContNavMobile{
+
+@media (min-width: 767.98px) {
+    #ContNavMobile {
         display: none;
     }
-    #ContNavFull{
+    #ContNavFull {
         display: block;
     }
-    #ourservice__body__desc1_mobile{
+    #ourservice__body__desc1_mobile {
         display: none;
     }
 }
+
 @media (max-width: 767.98px) {
-    #imgqsv1{
+    #imgqsv1 {
         display: none;
     }
-                        #dec2mobile{
-                            display: none;
-                        }
-    #carrito{
+    #dec2mobile {
+        display: none;
+    }
+    #carrito {
         display: none;
     }
     #login {
         display: none;
     }
-    #ourservice__body__desc1_mobile{
+    #ourservice__body__desc1_mobile {
         display: block;
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    #ourservice__body__desc1_fullscreen{
+    #ourservice__body__desc1_fullscreen {
         display: none !important;
     }
+}
 
-} 
 
 /* Our designs */
-#imgdesign{
+
+#imgdesign {
     background-image: url(/img/design1.jpg);
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:center ;
+    background-position: center;
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
 }
-#iphone{
+
+#iphone {
     right: 0;
-    top:1 ;
+    top: 1;
 }
+
 #myProgress {
     width: 100%;
     background-color: #ddd;
-  }
-  
-  #myBar {
+}
+
+#myBar {
     width: 1%;
     height: 10px;
     background-color: black;
-  }
+}
+
+
+/* pagina login */
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+}
+
+.form-signin .form-control {
+    height: auto;
+    padding: 10px;
+}
+
+.text-center {
+    background-image: url(/img/backgroundLogin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
