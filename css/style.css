@@ -123,6 +123,9 @@
     #ContNavFull{
         display: block;
     }
+    #ourservice__body__desc1_mobile{
+        display: none;
+    }
 }
 @media (max-width: 767.98px) {
 #imgqsv1{
@@ -132,6 +135,12 @@
         display: none;
     }
     #login {
+        display: none;
+    }
+    #ourservice__body__desc1_mobile{
+        display: block;
+    }
+    #ourservice__body__desc1_fullscreen{
         display: none;
     }
 } 
@@ -151,3 +160,13 @@
     right: 0;
     top:1 ;
 }
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 10px;
+    background-color: black;
+  }
