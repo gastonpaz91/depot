@@ -100,8 +100,19 @@
 }
 .card-text {
     font-size: 13px;
-    color: gray;
-    
+    color: gray;   
+}
+.footerText p {
+    margin-bottom: 1rem !important;
+}
+.contenedor {
+    position: relative;
+}
+.img-text{
+    bottom: 10px;
+    position: absolute;
+    width: 90%;
+    text-align: center;
 }
 
 /* @ media */
