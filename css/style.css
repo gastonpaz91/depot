@@ -134,9 +134,12 @@
     }
 }
 @media (max-width: 767.98px) {
-#imgqsv1{
+    #imgqsv1{
         display: none;
     }
+                        #dec2mobile{
+                            display: none;
+                        }
     #carrito{
         display: none;
     }
@@ -151,6 +154,7 @@
     #ourservice__body__desc1_fullscreen{
         display: none !important;
     }
+
 } 
 
 /* Our designs */
