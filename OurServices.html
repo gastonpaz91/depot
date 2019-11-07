@@ -16,8 +16,13 @@
     <!-- icono pestaña -->
     <link rel="icon" href="/img/PinClipart.com_bulb-images-clip-art_2642982.png">
     <title>Ideas-Our Services</title>
-
-
+    <!-- wow reveal -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- wow js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
 <body>
@@ -25,8 +30,8 @@
     <div class="container-fluid px-0" id="contGral">
         <!-- comienzo header -->
         <!-- navbar principal  -->
-        <div class="container-fluid" id="ContNavgral">
-            <nav class="navbar navbar-expand-md navbar-light" id="navbargral">
+        <div class="container-fluid pt-4" id="ContNavgral">
+            <nav class="navbar navbar-expand-md navbar-light " id="navbargral">
                 <a class="navbar-brand ml-2 col-3 " href="#"> <span class="text-black">
                         <i class="far fa-lightbulb text-black"></i> Idea</span></a>
                 <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -73,15 +78,17 @@
         </div>
         <br>
         <br>
+        <br>
+        <br>
         <!-- cuerpo, imagen y descripcion -->
         <!-- contenedor -->
-        <div class="container">
-            <div class="row">
+             <div class="row">
+          <div class="col-0 col-md-1"></div>
                 <!-- descripciones 1 fullsscreen-->
-                <div class="col-12 col-md-3 " id="ourservice__body__desc1_fullscreen">
-                    <div class="row pt-5">
+                <div class="col-12 col-md-3 d-flex flex-column justify-content-around" data-wow-delay="5s" id="ourservice__body__desc1_fullscreen">
+                    <div class="row pt-2">
                         <div class="col-9 infoIzq ">
-                            <span class="font-weight-bold">Ideas innovadoras</span>
+                            <span class="font-weight-bold wow zoomIn">Ideas innovadoras</span>
                             <br>
                             <span>Diseñamos cosas nuevas, únicas</span>
                         </div>
@@ -107,12 +114,12 @@
                     </div>
                 </div>
                 <!-- imagen -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-4">
                     <img src="/img/ipadiphone.png" alt="" style="width: 100%;">
                 </div>
                 <!-- descripciones 1 mobile-->
                 <div class="col-12 col-md-3 " id="ourservice__body__desc1_mobile">
-                    <div class="row pt-5 justify-content-center">
+                    <div class="row pt- justify-content-center">
                         <div class="col-9 infoIzq ">
                             <span class="font-weight-bold">Ideas innovadoras</span>
                             <br>
@@ -140,8 +147,8 @@
                     </div>
                 </div>
                 <!-- descripciones 2 -->
-                <div class="col-12 col-md-3 ">
-                    <div class="row pt-5 justify-content-center">
+                <div class="col-12 col-md-3 d-flex flex-column justify-content-around">
+                    <div class="row pt-2 justify-content-center">
                         <div class="col-9 infoIzq ">
                             <span class="font-weight-bold">Comunicación</span>
                             <br>
@@ -169,35 +176,23 @@
                     </div>
                 </div>
             </div>
-
-            <div class="container mt-5">
-                <div id="myBar"></div>
-            </div>
-
-            <br>
-            <button onclick="move()">Click Me</button>
-
-            <script>
-                var i = 0;
-                function move() {
-                    if (i == 0) {
-                        i = 1;
-                        var elem = document.getElementById("myBar");
-                        var width = 1;
-                        var id = setInterval(frame, 10);
-                        function frame() {
-                            if (width >= 80) {
-                                clearInterval(id);
-                                i = 0;
-                            } else {
-                                width++;
-                                elem.style.width = width + "%";
-                            }
-                        }
-                    }
-                }
-            </script>
         </div>
+        <div class="col-0 col-md-1"></div>
+            <br>
+            <br>
+            <!-- imagen con barras que se cargan -->
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="/img/mesa.jpg" alt="" style="width: 100%;">
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="container mt-5">
+                        <div id="myBar"></div>
+                    </div>
+                    <br>
+                    <button onclick="move()">Click Me</button>
+                </div>
+            </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -210,6 +205,27 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+        <!-- script barra que se carga -->
+        <script>
+            var i = 0;
+            function move() {
+                if (i == 0) {
+                    i = 1;
+                    var elem = document.getElementById("myBar");
+                    var width = 1;
+                    var id = setInterval(frame, 10);
+                    function frame() {
+                        if (width >= 80) {
+                            clearInterval(id);
+                            i = 0;
+                        } else {
+                            width++;
+                            elem.style.width = width + "%";
+                        }
+                    }
+                }
+            }
+        </script>
 </body>
 
 </html>
