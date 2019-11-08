@@ -20,9 +20,8 @@
     <link rel="stylesheet" href="css/animate.css">
     <!-- wow js -->
     <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+    <!-- w3 stylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
@@ -179,12 +178,12 @@
                 </div>
             </div>
             <div class="col-0 col-md-1"></div>
+            <br>
+            <br>
 
-            <br>
-            <br>
             <!-- imagen con barras que se cargan -->
-            <!-- imagen -->
-            <div class="row px-0">
+            <div class="row px-0 mt-5">
+                <!-- imagen -->
                 <div class="col-12 col-md-6">
                     <img src="/img/silla.jpg" alt="" style="width: 100%;">
                 </div>
@@ -193,22 +192,91 @@
                 <div class="col-12 col-md-6">
                     <div class="row">
                         <div class="col">
-
-                        </div>
-                    </div>
-                    <!-- barras -->
-                    <div class="row">
-                        <div class="col">
-                            <div class="container mt-5 border">
-                                <div id="myBar"></div>
-                            </div>
+                            <Span class="font-weight-bold">Calculá tus muebles</Span>
                             <br>
-                            <button onclick="move()">Calcular</button>
+                            <Span>Te mostramos que tan buen diseño y comodidad tienen nuestros productos, con nuestra
+                                calculadora interactiva. Probala ya!</Span>
                         </div>
                     </div>
+                    <br>
+                    <!-- barras -->
+                    <!-- Barra diseño -->
+                    <span class="font-weight-bold">Diseño</span>
+                    <br>
+                    <div class="w3-light-grey mt-1">
+                        <div id="myBar" class="w3-container w3-black w3-center text-white" style="width:10%">10%</div>
+                    </div>
+                    <br>
+                    <!-- Barra practicidad -->
+                    <span class="font-weight-bold">Practicidad</span>
+                    <br>
+                    <div class="w3-light-grey mt-1">
+                        <div id="myBar0" class="w3-container w3-black w3-center text-white" style="width:10%">10%</div>
+                    </div>
+                    <br>
+                    <!-- Barra comodidad -->
+                    <span class="font-weight-bold">Comodidad</span>
+                    <br>
+                    <div class="w3-light-grey mt-1">
+                        <div id="myBar1" class="w3-container w3-black w3-center text-white" style="width:10%">10%</div>
+                    </div>
+                    <br>
+                    <button class="w3-button w3-black text-white" onclick="move();moveprac();movecom()">Calcular</button>
                 </div>
+                <!-- funcion barra diseño -->
+                <script>
+                    function move() {
+                        var elem = document.getElementById("myBar");
+                        var width = 10;
+                        var id = setInterval(frame, 10);
+                        function frame() {
+                            if (width >= 87) {
+                                clearInterval(id);
+                            } else {
+                                width++;
+                                elem.style.width = width + '%';
+                                elem.innerHTML = width * 1 + '%';
+                            }
+                        }
+                    }
+                </script>
+                <!-- funcion barra practicidad -->
+                <script>
+                        function moveprac() {
+                            var elem = document.getElementById("myBar0");
+                            var width = 10;
+                            var id = setInterval(frame, 10);
+                            function frame() {
+                                if (width >= 58) {
+                                    clearInterval(id);
+                                } else {
+                                    width++;
+                                    elem.style.width = width + '%';
+                                    elem.innerHTML = width * 1 + '%';
+                                }
+                            }
+                        }
+                    </script>
+                    <!-- funcion barra comodidad -->
+                    <script>
+                            function movecom() {
+                                var elem = document.getElementById("myBar1");
+                                var width = 10;
+                                var id = setInterval(frame, 10);
+                                function frame() {
+                                    if (width >= 72) {
+                                        clearInterval(id);
+                                    } else {
+                                        width++;
+                                        elem.style.width = width + '%';
+                                        elem.innerHTML = width * 1 + '%';
+                                    }
+                                }
+                            }
+                        </script>
             </div>
         </div>
+    </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -221,27 +289,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <!-- script barra que se carga -->
-    <script>
-        var i = 0;
-        function move() {
-            if (i == 0) {
-                i = 1;
-                var elem = document.getElementById("myBar");
-                var width = 1;
-                var id = setInterval(frame, 10);
-                function frame() {
-                    if (width >= 80) {
-                        clearInterval(id);
-                        i = 0;
-                    } else {
-                        width++;
-                        elem.style.width = width + "%";
-                    }
-                }
-            }
-        }
-    </script>
+
 </body>
 
 </html>
