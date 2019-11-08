@@ -193,18 +193,6 @@
     top: 1;
 }
 
-#myProgress {
-    width: 100%;
-    background-color: #ddd;
-}
-
-#myBar {
-    width: 1%;
-    height: 10px;
-    background-color: black;
-}
-
-
 /* pagina login */
 
 .bd-placeholder-img {
