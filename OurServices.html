@@ -81,7 +81,7 @@
         <br>
         <!-- cuerpo, imagen y descripcion -->
         <!-- contenedor -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="cosas" style="transition: opacity 2s; opacity: 0;" >
             <div class="row">
                 <div class="col-0 col-md-1"></div>
                 <!-- descripciones 1 fullsscreen-->
@@ -221,136 +221,154 @@
                         <div id="myBar1" class="w3-container w3-black w3-center text-white" style="width:10%">10%</div>
                     </div>
                     <br>
-                    <button class="w3-button w3-black text-white" onclick="move();moveprac();movecom()">Calcular</button>
+                    <button class="w3-button w3-black text-white"
+                        onclick="move();moveprac();movecom()">Calcular</button>
                 </div>
-                <!-- funcion barra diseño -->
-                <script>
-                    function move() {
-                        var elem = document.getElementById("myBar");
-                        var width = 10;
-                        var id = setInterval(frame, 10);
-                        function frame() {
-                            if (width >= 87) {
-                                clearInterval(id);
-                            } else {
-                                width++;
-                                elem.style.width = width + '%';
-                                elem.innerHTML = width * 1 + '%';
-                            }
-                        }
-                    }
-                </script>
-                <!-- funcion barra practicidad -->
-                <script>
-                        function moveprac() {
-                            var elem = document.getElementById("myBar0");
-                            var width = 10;
-                            var id = setInterval(frame, 10);
-                            function frame() {
-                                if (width >= 58) {
-                                    clearInterval(id);
-                                } else {
-                                    width++;
-                                    elem.style.width = width + '%';
-                                    elem.innerHTML = width * 1 + '%';
-                                }
-                            }
-                        }
-                    </script>
-                    <!-- funcion barra comodidad -->
-                    <script>
-                            function movecom() {
-                                var elem = document.getElementById("myBar1");
-                                var width = 10;
-                                var id = setInterval(frame, 10);
-                                function frame() {
-                                    if (width >= 72) {
-                                        clearInterval(id);
-                                    } else {
-                                        width++;
-                                        elem.style.width = width + '%';
-                                        elem.innerHTML = width * 1 + '%';
-                                    }
-                                }
-                            }
-                        </script>
+
+
+
             </div>
         </div>
     </div>
-     <!-- comienzo footer -->
-     <div class="container-fluid">
-            <!-- cards footer -->
-            <div class="row justify-content-between">
-      
-              <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
+    <!-- comienzo footer -->
+    <div class="container-fluid">
+        <!-- cards footer -->
+        <div class="row justify-content-between">
+
+            <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
                 <div class="card-body">
-                  <h5 class="card-title">Servicio al Cliente</h5>
-                  <br>
-                  <a href="" class="footerText">
-                    <p class="card-text">Ayuda</p>
-                  </a>
-                  <a href="" class="footerText">
-                    <p class="card-text">Contacto</p>
-                  </a>
-                  <a href="" class="footerText">
-                    <p class="card-text">Términos y Condiciones</p>
-                  </a>
+                    <h5 class="card-title">Servicio al Cliente</h5>
+                    <br>
+                    <a href="" class="footerText">
+                        <p class="card-text">Ayuda</p>
+                    </a>
+                    <a href="" class="footerText">
+                        <p class="card-text">Contacto</p>
+                    </a>
+                    <a href="" class="footerText">
+                        <p class="card-text">Términos y Condiciones</p>
+                    </a>
                 </div>
-              </div>
-      
-              <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Empresa</h5>
-                  <br>
-                  <a href="" class="footerText">
-                    <p class="card-text">Quienes Somos</p>
-                  </a>
-                  <a href="" class="footerText">
-                    <p class="card-text">Nuestro Servicio</p>
-                  </a>
-                  <a href="" class="footerText">
-                    <p class="card-text">FAQs</p>
-                  </a>
-                </div>
-              </div>
-      
-              <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Redes Sociales</h5>
-                  <br>
-                  <a href="" class="footerText">
-                    <p class="card-text">Facebook</p>
-                  </a>
-                  <a href="" class="footerText">
-                    <p class="card-text">Instagram</p>
-                  </a>
-                  <a href="" class="footerText">
-                    <p class="card-text">Twitter</p>
-                  </a>
-                </div>
-              </div>
-      
-              <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Perfil</h5>
-                  <br>
-                  <a href="" class="footerText">
-                    <p class="card-text">Mi Cuenta</p>
-                  </a>
-                  <a href="" class="footerText">
-                    <p class="card-text">Rastreo de Orden</p>
-                  </a>
-                  <a href="" class="footerText">
-                    <p class="card-text">Apoyo</p>
-                  </a>
-                </div>
-              </div>
             </div>
-      
-            <div class="row"></div>
-      
-          </div>
+
+            <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Empresa</h5>
+                    <br>
+                    <a href="" class="footerText">
+                        <p class="card-text">Quienes Somos</p>
+                    </a>
+                    <a href="" class="footerText">
+                        <p class="card-text">Nuestro Servicio</p>
+                    </a>
+                    <a href="" class="footerText">
+                        <p class="card-text">FAQs</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Redes Sociales</h5>
+                    <br>
+                    <a href="" class="footerText">
+                        <p class="card-text">Facebook</p>
+                    </a>
+                    <a href="" class="footerText">
+                        <p class="card-text">Instagram</p>
+                    </a>
+                    <a href="" class="footerText">
+                        <p class="card-text">Twitter</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Perfil</h5>
+                    <br>
+                    <a href="" class="footerText">
+                        <p class="card-text">Mi Cuenta</p>
+                    </a>
+                    <a href="" class="footerText">
+                        <p class="card-text">Rastreo de Orden</p>
+                    </a>
+                    <a href="" class="footerText">
+                        <p class="card-text">Apoyo</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row"></div>
+
     </div>
+    </div>
+    <!-- JAVASCRIPT -->
+    <!-- funcion barra diseño -->
+    <script>
+        function move() {
+            var elem = document.getElementById("myBar");
+            var width = 10;
+            var id = setInterval(frame, 10);
+            function frame() {
+                if (width >= 87) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+    </script>
+    <!-- funcion barra practicidad -->
+    <script>
+        function moveprac() {
+            var elem = document.getElementById("myBar0");
+            var width = 10;
+            var id = setInterval(frame, 10);
+            function frame() {
+                if (width >= 58) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+    </script>
+    <!-- funcion barra comodidad -->
+    <script>
+        function movecom() {
+            var elem = document.getElementById("myBar1");
+            var width = 10;
+            var id = setInterval(frame, 10);
+            function frame() {
+                if (width >= 72) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+    </script>
+    <script>
+        var body = document.body;
+        var element = document.getElementById("cosas");
+        //Update DOM on scroll
+        document.addEventListener("scroll", function () {
+            var scrollAmt = window.pageYOffset || document.documentElement.scrollTop
+            if (window.innerHeight / 5 >= scrollAmt)
+                element.style.opacity = "0";
+            else
+                element.style.opacity = "1";
+        });
+    </script>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -362,6 +380,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <!-- Funcion mostrar cosas -->
 
 </body>
 
