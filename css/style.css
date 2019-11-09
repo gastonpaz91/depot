@@ -14,7 +14,7 @@
 }
 
 #ContNavgral {
-    height: 120px;
+    height: 80px;
 }
 
 #imgSlide {
@@ -56,9 +56,20 @@ color: #929292;
     height: 100%;
     top: 0;
 }
+.overlay div{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    display: none;
+
+}
 
 .overlay:hover {
     background-color: #0000009c;
+}
+
+.overlay:hover div {
+    display: block;
 }
 
 .imgwh:hover .img-scale {
