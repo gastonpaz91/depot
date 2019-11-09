@@ -28,6 +28,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+#textoimg {    
+    text-align: center;
+}
 
 #ContNavFull {
     display: none;
@@ -135,6 +138,19 @@
     width: 90%;
     text-align: center;
 }
+.loginBG {
+    display: flex;
+    background-image: url(/img/backgroundLogin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.handPointer:hover{
+    cursor: pointer;
+}
 
 
 /* @ media */
@@ -230,14 +246,5 @@
     padding: 10px;
 }
 
-.text-center {
-    background-image: url(/img/backgroundLogin.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 40px;
-    width: 100%;
-    height: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
+
   
