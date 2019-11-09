@@ -27,9 +27,15 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    flex-wrap: wrap;
 }
-#textoimg {    
+
+.titulo{
     text-align: center;
+}
+
+.subTextoimg {
+color: #929292;
 }
 
 #ContNavFull {
