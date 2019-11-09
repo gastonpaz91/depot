@@ -65,3 +65,7 @@ function movecom() {
         }
     }
 }
+//login
+function navLogin(){
+    window.open('login.html','_self')
+  }
