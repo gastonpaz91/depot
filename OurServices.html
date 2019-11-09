@@ -16,10 +16,6 @@
     <!-- icono pestaña -->
     <link rel="icon" href="/img/PinClipart.com_bulb-images-clip-art_2642982.png">
     <title>Ideas-Our Services</title>
-    <!-- wow reveal -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- wow js -->
-    <script src="js/wow.min.js"></script>
     <!-- w3 stylesheet -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
@@ -81,7 +77,7 @@
         <br>
         <!-- cuerpo, imagen y descripcion -->
         <!-- contenedor -->
-        <div class="container-fluid" id="cosas" style="transition: opacity 2s; opacity: 0;" >
+        <div class="container-fluid" id="cosas" style="transition: opacity 2s; opacity: 0;">
             <div class="row">
                 <div class="col-0 col-md-1"></div>
                 <!-- descripciones 1 fullsscreen-->
@@ -221,10 +217,9 @@
                         <div id="myBar1" class="w3-container w3-black w3-center text-white" style="width:10%">10%</div>
                     </div>
                     <br>
-                    <button class="w3-button w3-black text-white"
-                        onclick="move();moveprac();movecom()">Calcular</button>
+                    <!-- <button class="w3-button w3-black text-white"
+                        onclick="move();moveprac();movecom()">Calcular</button> -->
                 </div>
-
 
 
             </div>
@@ -304,72 +299,7 @@
 
     </div>
     </div>
-    <!-- JAVASCRIPT -->
-    <!-- funcion barra diseño -->
-    <script>
-        function move() {
-            var elem = document.getElementById("myBar");
-            var width = 10;
-            var id = setInterval(frame, 10);
-            function frame() {
-                if (width >= 87) {
-                    clearInterval(id);
-                } else {
-                    width++;
-                    elem.style.width = width + '%';
-                    elem.innerHTML = width * 1 + '%';
-                }
-            }
-        }
-    </script>
-    <!-- funcion barra practicidad -->
-    <script>
-        function moveprac() {
-            var elem = document.getElementById("myBar0");
-            var width = 10;
-            var id = setInterval(frame, 10);
-            function frame() {
-                if (width >= 58) {
-                    clearInterval(id);
-                } else {
-                    width++;
-                    elem.style.width = width + '%';
-                    elem.innerHTML = width * 1 + '%';
-                }
-            }
-        }
-    </script>
-    <!-- funcion barra comodidad -->
-    <script>
-        function movecom() {
-            var elem = document.getElementById("myBar1");
-            var width = 10;
-            var id = setInterval(frame, 10);
-            function frame() {
-                if (width >= 72) {
-                    clearInterval(id);
-                } else {
-                    width++;
-                    elem.style.width = width + '%';
-                    elem.innerHTML = width * 1 + '%';
-                }
-            }
-        }
-    </script>
-    <script>
-        var body = document.body;
-        var element = document.getElementById("cosas");
-        //Update DOM on scroll
-        document.addEventListener("scroll", function () {
-            var scrollAmt = window.pageYOffset || document.documentElement.scrollTop
-            if (window.innerHeight / 5 >= scrollAmt)
-                element.style.opacity = "0";
-            else
-                element.style.opacity = "1";
-        });
-    </script>
-
-    <!-- Optional JavaScript -->
+     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -380,7 +310,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <!-- Funcion mostrar cosas -->
+    <!-- archivo javascrip -->
+    <script src="/js/javascript.js"></script>
 
 </body>
 
