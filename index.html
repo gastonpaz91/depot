@@ -2,373 +2,360 @@
 <html lang="es">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- Stylesheet css -->
-  <link rel="stylesheet" href="/css/style.css">
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/96d9283950.js" crossorigin="anonymous"></script>
-  <!-- icono pestaña -->
-  <link rel="icon" href="/img/lightbulb.png">
-  <title>Idea</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Stylesheet css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/96d9283950.js" crossorigin="anonymous"></script>
+    <!-- icono pestaña -->
+    <link rel="icon" href="/img/lightbulb.png">
+    <title>Idea</title>
 </head>
 
 <body>
-  <!-- Contenedor  gral -->
-  <div class="container-fluid px-0" id="contGral">
-    <!-- comienzo header -->
-    <!-- navbar principal mobile -->
-    <div class="container" id="ContNavMobile">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <a class="navbar-brand" href="#"> <span><i class="far fa-lightbulb"></i> Idea</span></a>
-        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Contenedor  gral -->
+    <div class="container-fluid px-0" id="contGral">
+        <!-- comienzo header -->
+        <!-- navbar principal mobile -->
+        <div class="container" id="ContNavMobile">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <a class="navbar-brand" href="#"> <span><i class="far fa-lightbulb"></i> Idea</span></a>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="text-body font-weight-bolder">Menu</span>
           <span class="navbar-toggler-icon text-body"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#categorias">Categories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#topsales">Top Sales</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Our service</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Cart</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Login</a>
-            </li>
-          </ul>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#categorias">Categorías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#topsales">Top Ventas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/OurServices.html">Nuestro Servicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link handPointer" onclick="navLogin()">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-      </nav>
-    </div>
 
-    <!-- Full screen -->
-    <div class="container-fluid px-0 position-relative">
-      <!-- comienzo navbar -->
-      <div class="container-fluid position-absolute" id="ContNavFull">
-        <nav class="navbar navbar-expand-md navbar-light" id="navbarfull">
-          <a class="navbar-brand ml-2 col-3 " href="#"> <span class="text-white"><i
+        <!-- Full screen -->
+        <div class="container-fluid px-0 position-relative">
+            <!-- comienzo navbar -->
+            <div class="container-fluid position-absolute" id="ContNavFull">
+                <nav class="navbar navbar-expand-md navbar-light" id="navbarfull">
+                    <a class="navbar-brand ml-2 col-3 " href="#"> <span class="text-white"><i
                 class="far fa-lightbulb text-white"></i> Idea</span></a>
 
-          <div class="collapse navbar-collapse col-6 " id="navbarNav">
-            <ul class="navbar-nav justify-content-around" style="width: 100%;">
-              <li class="nav-item active ">
-                <a class="nav-link text-white font-weight-bolder" href="#categorias">Categorias</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white font-weight-bolder" href="#topsales">Top Sales</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white font-weight-bolder" href="/OurServices.html">Our Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white font-weight-bolder" href="#">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white font-weight-bolder" href="#">Design</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-3" id="login">
-            <div class="row justify-content-center">
-              <div class="col-4"></div>
-              <div class="col-8 d-flex justify-content-around  ">
-                <div class="row d-flex justify-content-between handPointer">
-                  <span class="text-white mr-2">Cart</span>
-                  <span><i class="fas fa-cart-plus" style="color: white;"></i></span>
-                </div>
-                <span class="text-white ml-3 handPointer" onclick="navLogin()">Login</span>
-              </div>
+                    <div class="collapse navbar-collapse col-6 " id="navBarNav">
+                        <ul class="navbar-nav justify-content-around" style="width: 100%;">
+                            <li class="nav-item active ">
+                                <a class="nav-link text-white font-weight-bolder" href="#categorias">Categorías</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white font-weight-bolder" href="#topsales">Top Ventas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white font-weight-bolder" href="/OurServices.html">Nuestro Servicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white font-weight-bolder" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white font-weight-bolder" href="#">Diseño</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3" id="login">
+                        <div class="row justify-content-center">
+                            <div class="col-4"></div>
+                            <div class="col-8 d-flex justify-content-around  ">
+                                <div class="row d-flex justify-content-between handPointer">
+                                    <span class="text-white mr-2">Cart</span>
+                                    <span><i class="fas fa-cart-plus" style="color: white;"></i></span>
+                                </div>
+                                <span class="text-white ml-3 handPointer" onclick="navLogin()">Login</span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
-          </div>
-        </nav>
-      </div>
-      <!-- imagen paralax -->
-      <div class="container-fluid px-0" id="imgSlide">
-        <div class="titulo">
-          <h1 class="just text-white" id="textoimg">Los mejores muebles se encuentran aqui</h2>
-            <h3 class="subTextoimg">Encontra los mejores diseños para tu casa</h3>
+            <!-- imagen paralax -->
+            <div class="container-fluid px-0" id="imgSlide">
+                <div class="titulo">
+                    <h1 class="just text-white" id="textoimg">Los mejores muebles se encuentran aqui</h2>
+                        <h3 class="subTextoimg">Encontrá bonitos diseños para tu casa</h3>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <br>
-    <!-- comienzo categorias -->
-    <div class="container" id="categorias">
-      <div>
-        <!-- titulo categorias -->
-        <h1 class="text-center"> Categorias</h1>
         <br>
-        <!-- contenido categorias -->
-        <div class="row">
-          <div class="col-6 col-md-4 contenedor">
-            <img src="/img/h1-product-5.jpg" style="width: 100%;" alt="">
-            <div class="img-text">
-              <h5>Decoración</h5>
+        <!-- comienzo categorias -->
+        <div class="container" id="categorias">
+            <div>
+                <!-- titulo categorias -->
+                <h1 class="text-center"> Categorías</h1>
+                <br>
+                <!-- contenido categorias -->
+                <div class="row">
+                    <div class="col-6 col-md-4 contenedor">
+                        <img src="/img/h1-product-5.jpg" style="width: 100%;" alt="">
+                        <div class="img-text">
+                            <h5>Decoración</h5>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 contenedor">
+                        <img src="/img/h4-product-17.jpg" style="width: 100%;" alt="">
+                        <div class="img-text">
+                            <h5>Muebles</h5>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 contenedor">
+                        <img src="/img/h3-product-2.jpg" style="width: 100%;" alt="">
+                        <div class="img-text">
+                            <h5>Iluminación</h5>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 contenedor">
+                        <img src="/img/h1-product-8.jpg" style="width: 100%;" alt="">
+                        <div class="img-text">
+                            <h5>Electrodomesticos</h5>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 contenedor" id="imgqsv1">
+                        <img src="/img/h3-product-5.jpg" style="width: 100%;" alt="">
+                        <div class="img-text">
+                            <h5>Comedor</h5>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 contenedor" id="imgqsv1">
+                        <img src="/img/h3-product-3.jpg" style="width: 100%;" alt="">
+                        <div class="img-text">
+                            <h5>Jardín</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-6 col-md-4 contenedor">
-            <img src="/img/h4-product-17.jpg" style="width: 100%;" alt="">
-            <div class="img-text">
-              <h5>Muebles</h5>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 contenedor">
-            <img src="/img/h3-product-2.jpg" style="width: 100%;" alt="">
-            <div class="img-text">
-              <h5>Iluminación</h5>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 contenedor">
-            <img src="/img/h1-product-8.jpg" style="width: 100%;" alt="">
-            <div class="img-text">
-              <h5>Electrodomesticos</h5>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 contenedor" id="imgqsv1">
-            <img src="/img/h3-product-5.jpg" style="width: 100%;" alt="">
-            <div class="img-text">
-              <h5>Comedor</h5>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 contenedor" id="imgqsv1">
-            <img src="/img/h3-product-3.jpg" style="width: 100%;" alt="">
-            <div class="img-text">
-              <h5>Jardín</h5>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <br>
-    <br>
-    <!-- comienzo masonry -->
-    <div class="col px-0" id="topsales">
-      <!-- titulo top sales -->
-      <h1 class="text-center"> Top Sales</h1>
-      <br>
-      <!-- masonry 1 grupo -->
-      <!-- imagen 1 grande -->
-      <div class="row mx-0">
-        <div class="col-12 col-md-8 px-0 imgwh" id="imggde1">
-          <img class="img-scale" src="/img/h6-product-46.jpg" alt="" style="width: 100%;">
-          <!-- overlay -->
-          <div class="overlay d-flex justify-content-center align-items-center">
-            <div class="" id="divoverlay">
-              <h5 class="text-white ">Cama Rústica</h5>
-              <span class="text-white"><i class="fas fa-star"></i> <span> </span><i class="fas fa-star"></i><span>
-                </span><i class="fas fa-star"></i><span> </span><i class="fas fa-star"></i><span> </span><i
-                  class="fas fa-star-half-alt"></i></span>
-              <span class="text-white">$870</span>
-            </div>
-          </div>
-        </div>
-        <!-- imagen 1 chica -->
-        <div class="col-12 col-md-4 px-0">
-          <div class="row mx-0">
-            <div class="col-6 col-md-12 px-0 imgwh" id="imgchic1">
-              <img class="img-scale" src="/img/h6-product-47.jpg" alt="" style="width: 100%;;">
-              <!-- overlay -->
-              <div class="overlay d-flex justify-content-center align-items-center">
-                <div class="" id="divoverlay">
-                  <h5 class="text-white ">Iluminación led</h5>
-                  <span class="text-white"><i class="fas fa-star"></i> <span> </span><i class="fas fa-star"></i><span>
+        <br>
+        <br>
+        <!-- comienzo masonry -->
+        <div class="col px-0" id="topsales">
+            <!-- titulo top sales -->
+            <h1 class="text-center"> Top Ventas</h1>
+            <br>
+            <!-- masonry 1 grupo -->
+            <!-- imagen 1 grande -->
+            <div class="row mx-0">
+                <div class="col-12 col-md-8 px-0 imgwh" id="imggde1">
+                    <img class="img-scale" src="/img/h6-product-46.jpg" alt="" style="width: 100%;">
+                    <!-- overlay -->
+                    <div class="overlay d-flex justify-content-center align-items-center">
+                        <div class="" id="divoverlay">
+                            <h5 class="text-white ">Cama Rústica</h5>
+                            <span class="text-white"><i class="fas fa-star"></i> <span> </span><i class="fas fa-star"></i><span>
+                </span><i class="fas fa-star"></i><span> </span><i class="fas fa-star"></i><span> </span><i class="fas fa-star-half-alt"></i></span>
+                            <span class="text-white">$870</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- imagen 1 chica -->
+                <div class="col-12 col-md-4 px-0">
+                    <div class="row mx-0">
+                        <div class="col-6 col-md-12 px-0 imgwh" id="imgchic1">
+                            <img class="img-scale" src="/img/h6-product-47.jpg" alt="" style="width: 100%;;">
+                            <!-- overlay -->
+                            <div class="overlay d-flex justify-content-center align-items-center">
+                                <div class="" id="divoverlay">
+                                    <h5 class="text-white ">Iluminación led</h5>
+                                    <span class="text-white"><i class="fas fa-star"></i> <span> </span><i class="fas fa-star"></i><span>
                     </span><i class="fas fa-star"></i><span> </span><i class="fas fa-star-half-alt"></i></span>
-                  <span class="text-white">$580</span>
-                </div>
-              </div>
-            </div>
-            <!-- imagen 2 chica -->
-            <div class="col-6 col-md-12 px-0 imgwh" id="imgchic2">
-              <img class="img-scale" src="/img/h6-product-48.jpg" alt="" style="width: 100%;;">
+                                    <span class="text-white">$580</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- imagen 2 chica -->
+                        <div class="col-6 col-md-12 px-0 imgwh" id="imgchic2">
+                            <img class="img-scale" src="/img/h6-product-48.jpg" alt="" style="width: 100%;;">
 
-              <!-- overlay -->
-              <div class="overlay d-flex justify-content-center align-items-center">
-                <div class="" id="divoverlay">
-                  <h5 class="text-white ">Taza Cerámica</h5>
-                  <span class="text-white">
-                    <i class="fas fa-star"></i><span> </span><i class="fas fa-star"></i><span> </span><i class="fas fa-star"></i><span> </span><i
-                      class="fas fa-star-half-alt"></i></span>
-                  <span class="text-white">$370</span>
+                            <!-- overlay -->
+                            <div class="overlay d-flex justify-content-center align-items-center">
+                                <div class="" id="divoverlay">
+                                    <h5 class="text-white ">Taza Cerámica</h5>
+                                    <span class="text-white">
+                    <i class="fas fa-star"></i><span> </span><i class="fas fa-star"></i><span> </span><i class="fas fa-star"></i><span> </span><i class="fas fa-star-half-alt"></i></span>
+                                    <span class="text-white">$370</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- masonry 2 grupo -->
-      <div class="row mx-0">
-        <div class="col-12 col-md-4 px-0">
-          <!-- imagen chica 4 -->
-          <div class="row mx-0">
-            <div class="col-6 col-md-12 px-0 imgwh">
-              <img class="img-scale" src="/img/h6-product-49.jpg" alt="" style="width: 100%;">
-              <!-- overlay -->
-              <div class="overlay d-flex justify-content-center align-items-center">
-                <div class="" id="divoverlay">
-                  <h5 class="text-white ">Juego de focos filamento</h5>
-                  <span class="text-white"><i class="fas fa-star"></i><span>
-                    </span><i class="fas fa-star"></i><span> </span><i class="fas fa-star"></i><span> </span><i
-                      class="fas fa-star-half-alt"></i></span>
-                  <span class="text-white">$670</span>
-                </div>
-              </div>
-            </div>
-            <!-- imagen chica 3 -->
-            <div class="col-6 col-md-12 px-0 imgwh">
-              <img class="img-scale" src="/img/h6-product-51.jpg" alt="" style="width: 100%;">
-              <!-- overlay -->
-              <div class="overlay d-flex justify-content-center align-items-center">
-                <div class="" id="divoverlay">
-                  <h5 class="text-white ">Juego de baño</h5>
-                  <span class="text-white"><i class="fas fa-star"></i> <span> </span><i class="fas fa-star"></i><span>
+            <!-- masonry 2 grupo -->
+            <div class="row mx-0">
+                <div class="col-12 col-md-4 px-0">
+                    <!-- imagen chica 4 -->
+                    <div class="row mx-0">
+                        <div class="col-6 col-md-12 px-0 imgwh">
+                            <img class="img-scale" src="/img/h6-product-49.jpg" alt="" style="width: 100%;">
+                            <!-- overlay -->
+                            <div class="overlay d-flex justify-content-center align-items-center">
+                                <div class="" id="divoverlay">
+                                    <h5 class="text-white ">Juego de focos filamento</h5>
+                                    <span class="text-white"><i class="fas fa-star"></i><span>
+                    </span><i class="fas fa-star"></i><span> </span><i class="fas fa-star"></i><span> </span><i class="fas fa-star-half-alt"></i></span>
+                                    <span class="text-white">$670</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- imagen chica 3 -->
+                        <div class="col-6 col-md-12 px-0 imgwh">
+                            <img class="img-scale" src="/img/h6-product-51.jpg" alt="" style="width: 100%;">
+                            <!-- overlay -->
+                            <div class="overlay d-flex justify-content-center align-items-center">
+                                <div class="" id="divoverlay">
+                                    <h5 class="text-white ">Juego de baño</h5>
+                                    <span class="text-white"><i class="fas fa-star"></i> <span> </span><i class="fas fa-star"></i><span>
                     </span><i class="fas fa-star"></i><span> </span><i class="fas fa-star"></i><span> </span></span>
-                  <span class="text-white">$500</span>
+                                    <span class="text-white">$500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <!-- imagen grande 2  -->
+                <div class="col-12 col-md-8 px-0 imgwh">
+                    <img class="img-scale" src="/img/h6-product-50.jpg" alt="" style="width: 100%;">
+                    <!-- overlay -->
+                    <div class="overlay d-flex justify-content-center align-items-center">
+                        <div class="" id="divoverlay">
+                            <h5 class="text-white ">Iluminación estilo industrial</h5>
+                            <span class="text-white"><i class="fas fa-star"></i> <span> </span><i class="fas fa-star"></i><span>
+                </span><i class="fas fa-star"></i><span> </span><i class="fas fa-star"></i><span> </span><i class="fas fa-star-half-alt"></i></span>
+                            <span class="text-white">$1050</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <!-- imagen grande 2  -->
-        <div class="col-12 col-md-8 px-0 imgwh">
-          <img class="img-scale" src="/img/h6-product-50.jpg" alt="" style="width: 100%;">
-          <!-- overlay -->
-          <div class="overlay d-flex justify-content-center align-items-center">
-            <div class="" id="divoverlay">
-              <h5 class="text-white ">Iluminación estilo industrial</h5>
-              <span class="text-white"><i class="fas fa-star"></i> <span> </span><i class="fas fa-star"></i><span>
-                </span><i class="fas fa-star"></i><span> </span><i class="fas fa-star"></i><span> </span><i
-                  class="fas fa-star-half-alt"></i></span>
-              <span class="text-white">$1050</span>
+        <!-- comienzo suscripcion -->
+        <div class="container">
+            <!-- titulo suscripcion -->
+            <br>
+            <h1 class="text-center"> Suscríbase a Idea</h1>
+            <br>
+            <h2 class="text-center" id="subtituloSuscribir">Suscríbase para obtener beneficios en hasta 50% de descuento.
+            </h2>
+            <br>
+            <br>
+            <!-- parte para suscribirse -->
+            <div class="container" id="containerSuscribe">
+                <input type="email" name="email" value="" size="40" maxlength="100" class="emailAddress" aria-required="true" aria-invalid="false" placeholder="Email Address">
+                <input type="submit" value="SUSCRIBIR" class="buttonSuscribe">
             </div>
-          </div>
+
         </div>
-      </div>
-    </div>
-    <!-- comienzo suscripcion -->
-    <div class="container">
-      <!-- titulo suscripcion -->
-      <br>
-      <h1 class="text-center"> Suscríbase a Idea</h1>
-      <br>
-      <h2 class="text-center" id="subtituloSuscribir">Suscríbase para obtener beneficios en hasta 50% de
-        descuento.</h2>
-      <br>
-      <br>
-      <!-- parte para suscribirse -->
-      <div class="container" id="containerSuscribe">
-        <input type="email" name="email" value="" size="40" maxlength="100" class="emailAddress" aria-required="true"
-          aria-invalid="false" placeholder="Email Address">
-        <input type="submit" value="SUSCRIBIR" class="buttonSuscribe">
-      </div>
+        <!-- carrito estatico -->
+        <div class="mr-2 " id="carrito" style="background: white;">
+            <span><i class="fas fa-shopping-cart"></i> Comprar</span>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- comienzo footer -->
+        <div class="container-fluid">
+            <!-- cards footer -->
+            <div class="row justify-content-between">
 
-    </div>
-    <!-- carrito estatico -->
-    <div class="mr-2 " id="carrito" style="background: white;">
-      <span><i class="fas fa-shopping-cart"></i> Comprar</span>
-    </div>
-    <br>
-    <br>
-    <br>
-    <!-- comienzo footer -->
-    <div class="container-fluid">
-      <!-- cards footer -->
-      <div class="row justify-content-between">
+                <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Servicio al Cliente</h5>
+                        <br>
+                        <a href="" class="footerText">
+                            <p class="card-text">Ayuda</p>
+                        </a>
+                        <a href="" class="footerText">
+                            <p class="card-text">Contacto</p>
+                        </a>
+                        <a href="" class="footerText">
+                            <p class="card-text">Términos y Condiciones</p>
+                        </a>
+                    </div>
+                </div>
 
-        <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
-          <div class="card-body">
-            <h5 class="card-title">Servicio al Cliente</h5>
-            <br>
-            <a href="" class="footerText">
-              <p class="card-text">Ayuda</p>
-            </a>
-            <a href="" class="footerText">
-              <p class="card-text">Contacto</p>
-            </a>
-            <a href="" class="footerText">
-              <p class="card-text">Términos y Condiciones</p>
-            </a>
-          </div>
+                <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Empresa</h5>
+                        <br>
+                        <a href="" class="footerText">
+                            <p class="card-text">Quienes Somos</p>
+                        </a>
+                        <a href="" class="footerText">
+                            <p class="card-text">Nuestro Servicio</p>
+                        </a>
+                        <a href="" class="footerText">
+                            <p class="card-text">FAQs</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Redes Sociales</h5>
+                        <br>
+                        <a href="" class="footerText">
+                            <p class="card-text">Facebook</p>
+                        </a>
+                        <a href="" class="footerText">
+                            <p class="card-text">Instagram</p>
+                        </a>
+                        <a href="" class="footerText">
+                            <p class="card-text">Twitter</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Perfil</h5>
+                        <br>
+                        <a href="" class="footerText">
+                            <p class="card-text">Mi Cuenta</p>
+                        </a>
+                        <a href="" class="footerText">
+                            <p class="card-text">Rastreo de Orden</p>
+                        </a>
+                        <a href="" class="footerText">
+                            <p class="card-text">Apoyo</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row"></div>
+
         </div>
 
-        <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
-          <div class="card-body">
-            <h5 class="card-title">Empresa</h5>
-            <br>
-            <a href="" class="footerText">
-              <p class="card-text">Quienes Somos</p>
-            </a>
-            <a href="" class="footerText">
-              <p class="card-text">Nuestro Servicio</p>
-            </a>
-            <a href="" class="footerText">
-              <p class="card-text">FAQs</p>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
-          <div class="card-body">
-            <h5 class="card-title">Redes Sociales</h5>
-            <br>
-            <a href="" class="footerText">
-              <p class="card-text">Facebook</p>
-            </a>
-            <a href="" class="footerText">
-              <p class="card-text">Instagram</p>
-            </a>
-            <a href="" class="footerText">
-              <p class="card-text">Twitter</p>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
-          <div class="card-body">
-            <h5 class="card-title">Perfil</h5>
-            <br>
-            <a href="" class="footerText">
-              <p class="card-text">Mi Cuenta</p>
-            </a>
-            <a href="" class="footerText">
-              <p class="card-text">Rastreo de Orden</p>
-            </a>
-            <a href="" class="footerText">
-              <p class="card-text">Apoyo</p>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="row"></div>
 
     </div>
-
-
-  </div>
-  <!-- Optional Java Script -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="/js/javascript.js"></script>
+    <!-- Optional Java Script -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/js/javascript.js"></script>
 </body>
 
 </html>
