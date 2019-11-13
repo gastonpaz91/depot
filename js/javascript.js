@@ -73,7 +73,12 @@ function movecom() {
 function navLogin() {
     window.open('login.html', '_self')
 }
+<<<<<<< HEAD
 //cart
 function navCart() {
     windoy.open('checkout.html', '_self')
 }
+=======
+
+
+>>>>>>> producto

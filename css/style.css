@@ -281,3 +281,24 @@ html {
     height: auto;
     padding: 10px;
 }
+
+/* Our products */
+#route{
+    color: gray;
+}
+@media (max-width: 767.98px) {
+    #prodImg{
+        flex-direction: row !important;
+               }
+    #descprod{
+            display: none;
+    }
+}
+.textogris{
+    color: gray;
+}
+hr {
+    margin-top: 50px;
+    border-style: inset;
+    border-width: 1px;
+}
