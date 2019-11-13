@@ -1,15 +1,16 @@
-
 //barras que se cargan segun scroll
 var body = document.body;
 var mostrarSoloUnaVez = true;
 var element = document.getElementById("cosas");
 var efectounavez = true;
 //Update DOM on scroll
-document.addEventListener("scroll", function () {
+document.addEventListener("scroll", function() {
     var scrollAmt = window.pageYOffset || document.documentElement.scrollTop //te devuelve distancia de scroll desde el inicio hasta el mouse
     if (scrollAmt > 873 && mostrarSoloUnaVez) {
         mostrarSoloUnaVez = false;
-        move(); moveprac(); movecom();
+        move();
+        moveprac();
+        movecom();
     }
 
     if (scrollAmt > 195 && efectounavez) {
@@ -24,6 +25,7 @@ function move() {
     var elem = document.getElementById("myBar");
     var width = 10;
     var id = setInterval(frame, 10);
+
     function frame() {
         if (width >= 87) {
             clearInterval(id);
@@ -40,6 +42,7 @@ function moveprac() {
     var elem = document.getElementById("myBar0");
     var width = 10;
     var id = setInterval(frame, 10);
+
     function frame() {
         if (width >= 58) {
             clearInterval(id);
@@ -55,6 +58,7 @@ function movecom() {
     var elem = document.getElementById("myBar1");
     var width = 10;
     var id = setInterval(frame, 10);
+
     function frame() {
         if (width >= 72) {
             clearInterval(id);
@@ -66,6 +70,10 @@ function movecom() {
     }
 }
 //login
-function navLogin(){
-    window.open('login.html','_self')
-  }
+function navLogin() {
+    window.open('login.html', '_self')
+}
+//cart
+function navCart() {
+    windoy.open('checkout.html', '_self')
+}
