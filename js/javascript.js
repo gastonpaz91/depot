@@ -75,5 +75,5 @@ function navLogin() {
 }
 //cart
 function navCart() {
-    windoy.open('checkout.html', '_self')
+    window.open('checkout.html', '_self')
 }

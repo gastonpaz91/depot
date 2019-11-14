@@ -10,10 +10,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Stylesheet css -->
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/96d9283950.js" crossorigin="anonymous"></script>
     <!-- icono pestaña -->
     <link rel="icon" href="/img/lightbulb.png">
+    <!-- font family -->
+    <!-- roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    
     <title>Idea</title>
 </head>
 
@@ -24,7 +29,7 @@
         <!-- navbar principal mobile -->
         <div class="container" id="ContNavMobile">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                <a class="navbar-brand" href="#"> <span><i class="far fa-lightbulb"></i> Idea</span></a>
+                <a class="navbar-brand" href="index.html"> <span><i class="far fa-lightbulb"></i> Idea</span></a>
                 <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="text-body font-weight-bolder">Menu</span>
           <span class="navbar-toggler-icon text-body"></span>
@@ -95,8 +100,8 @@
             <!-- imagen paralax -->
             <div class="container-fluid px-0" id="imgSlide">
                 <div class="titulo">
-                    <h1 class="just text-white" id="textoimg">Los mejores muebles se encuentran aqui</h2>
-                        <h3 class="subTextoimg">Encontrá bonitos diseños para tu casa</h3>
+                    <h1 class="just text-white" id="textoimg" style="font-family: Roboto-Medium;">LOS MEJORES MUEBLES SE ENCUENTRAN AQUI</h2>
+                        <h3 class="subTextoimg" style="font-family: Roboto-LightItalic;">ENCONTRÁ BONITOS DISEÑOS PARA TU CASA</h3>
                 </div>
             </div>
         </div>
@@ -105,7 +110,7 @@
         <div class="container" id="categorias">
             <div>
                 <!-- titulo categorias -->
-                <h1 class="text-center"> Categorías</h1>
+                <h1 class="text-center"> CATEGORÍAS</h1>
                 <br>
                 <!-- contenido categorias -->
                 <div class="row">
@@ -153,7 +158,7 @@
         <!-- comienzo masonry -->
         <div class="col px-0" id="topsales">
             <!-- titulo top sales -->
-            <h1 class="text-center"> Top Ventas</h1>
+            <h1 class="text-center"> TOP VENTAS</h1>
             <br>
             <!-- masonry 1 grupo -->
             <!-- imagen 1 grande -->
@@ -254,9 +259,9 @@
         <div class="container">
             <!-- titulo suscripcion -->
             <br>
-            <h1 class="text-center"> Suscríbase a Idea</h1>
+            <h1 class="text-center" style="font-family: Roboto-Medium;"> SUSCRÍBASE A IDEA</h1>
             <br>
-            <h2 class="text-center" id="subtituloSuscribir">Suscríbase para obtener beneficios en hasta 50% de descuento.
+            <h2 class="text-center" id="subtituloSuscribir" style="font-family: Roboto-Italic;">SUSCRÍBASE PARA OBTENER BENEFICIOS EN HASTA UN 50% DE DESCUENTO.
             </h2>
             <br>
             <br>
@@ -269,7 +274,10 @@
         </div>
         <!-- carrito estatico -->
         <div class="mr-2 " id="carrito" style="background: white;">
-            <span><i class="fas fa-shopping-cart"></i> Comprar</span>
+            <span>
+                <a href="#contGral">
+                    <i class="fas fa-shopping-cart"></i> Comprar</span>
+                </a>
         </div>
         <br>
         <br>
@@ -281,7 +289,7 @@
 
                 <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Servicio al Cliente</h5>
+                        <h5 class="card-title tituloFooter">Servicio al Cliente</h5>
                         <br>
                         <a href="" class="footerText">
                             <p class="card-text">Ayuda</p>
@@ -297,7 +305,7 @@
 
                 <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Empresa</h5>
+                        <h5 class="card-title tituloFooter">Empresa</h5>
                         <br>
                         <a href="" class="footerText">
                             <p class="card-text">Quienes Somos</p>
@@ -313,7 +321,7 @@
 
                 <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Redes Sociales</h5>
+                        <h5 class="card-title tituloFooter">Redes Sociales</h5>
                         <br>
                         <a href="" class="footerText">
                             <p class="card-text">Facebook</p>
@@ -329,7 +337,7 @@
 
                 <div class="col-12 col-md-3 mb-3" style="max-width: 15rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Perfil</h5>
+                        <h5 class="card-title  tituloFooter">Perfil</h5>
                         <br>
                         <a href="" class="footerText">
                             <p class="card-text">Mi Cuenta</p>
