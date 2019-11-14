@@ -69,11 +69,26 @@ function movecom() {
         }
     }
 }
-//login
-function navLogin() {
-    window.open('login.html', '_self')
+
+function addCart(){
+    var cart = document.getElementById("cart")
+    cart.innerHTML='$870';
+    cart.style.fontWeight='900'
 }
-//cart
-function navCart() {
-    window.open('checkout.html', '_self')
+//volver al home
+function navegar(url) {
+    window.open(url, '_self')
 }
+function fav(mostrarRelleno) {
+    var relleno=document.getElementById('favRelleno')
+    var vacio=document.getElementById('favVacio')
+
+    if(mostrarRelleno==='si'){
+        vacio.style.display = 'none';
+        relleno.style.display = 'block';
+    }else{
+        vacio.style.display = 'block';
+        relleno.style.display = 'none';
+    }
+
+    }
