@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Stylesheet css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/96d9283950.js" crossorigin="anonymous"></script>
+    <!-- icono pestaña -->
+    <!-- icono pestaña -->
+    <link rel="icon" href="/img/lightbulb.png">
+    <title>Ideas-Producto</title>
+    <!-- w3 stylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <!-- Contenedor  gral -->
+    <div class="container-fluid px-0 " id="contGral">
+        <!-- comienzo header -->
+        <!-- navbar principal  -->
+        <div class="container-fluid pt-3 " id="ContNavgral">
+            <nav class="navbar navbar-expand-md navbar-light " id="navbargral">
+                <a class="navbar-brand col-3 " href="#"> <span class="text-black" onclick="navegar('index.html')">
+                        <i class="far fa-lightbulb text-black"></i> Idea</span></a>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="text-body font-weight-bolder">Menu</span>
+                    <span class="navbar-toggler-icon text-body"></span>
+                </button>
+                <div class="collapse navbar-collapse col-6 " id="navbarNav">
+                    <ul class="navbar-nav justify-content-around" style="width: 100%;">
+                        <li class="nav-item active ">
+                            <a class="nav-link text-black font-weight-bolder" href="index.html#categorias">Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black font-weight-bolder" href="index.html#topsales">Top Ventas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black font-weight-bolder" href="/OurServices.html">Nuestro Servicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black font-weight-bolder" href="">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black font-weight-bolder" href="#">Diseño</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3" id="login">
+                    <div class="row justify-content-center">
+                        <div class="col-4"></div>
+                        <div class="col-8 d-flex justify-content-around  ">
+                            <div class="row d-flex justify-content-between ">
+                                <span id="cart" class="text-black mr-2 handPointer" onclick="navegar('/checkout.html')">Cart</span>
+                                <span><i class="fas fa-cart-plus" style="color: black;"></i></span>
+                            </div>
+                            <span class="text-black ml-3 handPointer" onclick="navegar('/login.html')">Login</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid px-5" style="background: whitesmoke;">
+            <div class="row" style="height: 100px; padding: 15px;">
+                <span id="route">Inicio/Artículos para el hogar/Cuarto</span>
+            </div>
+            <!-- Imagen con descripcion del producto -->
+            <!-- contenedor -->
+            <div class="row">
+                <!-- imagenes -->
+                <div class="col-12 col-md-7">
+                    <div class="row">
+                        <div class="col-12 col-md-2 d-flex flex-column justify-content-between" id="prodImg">
+                            <!-- <div class="row d-flex align-around"> -->
+                            <!-- <div class="col-6 col-md-12"> -->
+                            <div class="handPointer" data-toggle="modal" data-target="#exampleModal2">
+                                <img src="/img/deco1.jpg" alt="" width="100%">
+                            </div>
+                            <!-- </div> -->
+                            <!-- <div class="col-6 col-md-12"> -->
+                            <div class="handPointer" data-toggle="modal" data-target="#exampleModal3">
+                                <img src="/img/deco2.jpg" alt="" width="100%">
+                            </div>
+                            <!-- </div> -->
+                            <!-- <div class="col-6 col-md-12"> -->
+                            <div class="handPointer" data-toggle="modal" data-target="#exampleModal4">
+                                <img src="/img/deco3.jpg" alt="" width="100%">
+                            </div>
+                            <!-- </div> -->
+                            <!-- <div class="col-6 col-md-12"> -->
+                            <div class="handPointer" data-toggle="modal" data-target="#exampleModal5">
+                                <img src="/img/deco4.jpg" alt="" width="100%">
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                        <div class="col-12 col-md-8 handPointer">
+                            <div data-toggle="modal" data-target="#exampleModal1">
+                                <img src="/img/h1-product-5.jpg" alt="" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modales imagenes -->
+                <!-- modal imagen grande -->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="/img/h6-product-46.jpg" alt="" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal imagen chica 1 -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="/img/cama1.jpg" alt="" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal imagen chica 2 -->
+                <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="/img/cama2.jpg" alt="" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal imagen chica 3 -->
+                <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="/img/cama3.jpg" alt="" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal imagen chica 4 -->
+                <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="/img/cama4.jpg" alt="" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- descripcion producto -->
+                <div class="col-12 col-md-5">
+                    <h3>Decoración</h3>
+                    <span class="textogris" style=" font-size: larger;">$870</span>
+                    <div class="mt-4">
+                        <!-- valoración usuarios -->
+                        <span style="color: rgb(80, 79, 79) !important;">
+                            <i class="fas fa-star"></i> <span> </span><i class="fas fa-star"></i><span>
+                            </span><i class="fas fa-star"></i><span> </span><i class="fas fa-star"></i><span>
+                            </span><i class="fas fa-star-half-alt"></i>
+
+                        <span class="ml-3 textogris">(340 valoraciones de usuarios)</span></span>
+                        <br>
+                        <div class="mt-3 textogris"><span>Este juego de cama viene en distintos tamaños y
+                                colores. Es ideal para cuarts descontracturados, para parejas jóvenes. La mayor ventaja
+                                es que queda bien estando tendida o destendida la cama.</span></div>
+                        <button type="button" onclick="addCart()" class="btn btn-dark mt-5">Agregar al carrito</button>
+                        <br>
+                        <!-- agregar a favoritos -->
+                        <div class="my-3 ">
+                            <span id="favRelleno" onclick="fav('no')" style="display:none;"><i class="fas fa-heart"></i> Eliminar de favoritos</span>
+                            <span id="favVacio" onclick="fav('si')"><i class="far fa-heart"></i> Agregar a favoritos</span>
+                        </div>
+                        <!-- ultima descripcion -->
+                        <div class="mt-5" id="descprod">
+                            <div class="mt-1">
+                                <span>Código:</span>
+                                <span class="textogris">1873</span>
+                            </div>
+                            <div class="mt-1">
+                                <span>Categoría:</span>
+                                <span class="textogris">Luminosa</span>
+                            </div>
+                            <div class="mt-1">
+                                <span>Etiquetas:</span>
+                                <span class="textogris">decoración, cuarto, diseño</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- pestañas con más info -->
+            <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
+                <!-- pestaña 1 -->
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Descripion</a>
+                </li>
+                <!-- pestaña 2 -->
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Info</a>
+                </li>
+                <!-- pestaña 3 -->
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Puntuación</a>
+                </li>
+            </ul>
+            <!-- pestaña 1 contenido -->
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="mt-3">
+                        <h4 style="font-weight: bolder;">Descripción</h4>
+                    </div>
+                    <div class="mt-3"> Juego de sábanas, acolchados y almoadones. Vienen en distintos colores a elegir y texturas. Las telas son todas importadas de la india, orgánicas y elaboradas a mano, sometidas a un proceso para que con el paso del tiempo no se apablen.
+                        Este juego de dormitorio está elaborado par que dure toda la vida </div>
+                </div>
+                <!-- pestaña 2 contenido -->
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="mt-3 pl-5">
+                        <h4 style="font-weight: bolder;">Info</h4>
+                    </div>
+                    <div class="mt-3 pl-5">
+                        <span>Tela india</span>
+                        <br>
+                        <span>Color: naranja, azul o amarillo</span>
+                        <br>
+                        <span>Almoadones de algodon</span>
+                        <br>
+                        <span>Importado por chip importaciones</span>
+                    </div>
+                </div>
+                <!-- pestaña 3 contenido -->
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="mt-3 pl-5">
+                        <div class="mt-3">
+                            <h4 style="font-weight: bolder;">Puntuación</h4>
+                        </div>
+                        <span style="color: rgb(80, 79, 79) !important;">
+                            <i class="fas fa-star"></i> <span> </span><i class="fas fa-star"></i><span>
+                            </span><i class="fas fa-star"></i><span> </span><i class="fas fa-star"></i><span>
+                            </span><i class="fas fa-star-half-alt"></i>
+                        <span class="ml-3 textogris">(340 valoraciones de usuarios)</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <!-- productos relacionados -->
+            <div class="mt-5">
+                <div>
+                    <span class="textogris"> Los que compraron este producto también vieron:</span>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-6 col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/img/h1-product-8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pava</h5>
+                                <a href="#" class="btn btn-dark">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/img/h6-product-51.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Juego de Toallas</h5>
+                                <a href="#" class="btn btn-dark">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/img/h1-product-5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Reloj</h5>
+                                <a href="#" class="btn btn-dark">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/img/h6-product-48.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pava</h5>
+                                <a href="#" class="btn btn-dark">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- archivo javascrip -->
+    <script src="/js/javascript.js"></script>
+</body>
