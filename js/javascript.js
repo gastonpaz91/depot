@@ -14,7 +14,6 @@ document.addEventListener("scroll", function() {
     }
 
     if (scrollAmt > 195 && efectounavez) {
-        console.log('rere');
         efectounavez = false;
         element.style.opacity = "1";
     }
