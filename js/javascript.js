@@ -14,7 +14,6 @@ document.addEventListener("scroll", function() {
     }
 
     if (scrollAmt > 195 && efectounavez) {
-        console.log('rere');
         efectounavez = false;
         element.style.opacity = "1";
     }
@@ -70,25 +69,26 @@ function movecom() {
     }
 }
 
-function addCart(){
+function addCart() {
     var cart = document.getElementById("cart")
-    cart.innerHTML='$870';
-    cart.style.fontWeight='900'
+    cart.innerHTML = '$870';
+    cart.style.fontWeight = '900'
 }
 //volver al home
 function navegar(url) {
     window.open(url, '_self')
 }
-function fav(mostrarRelleno) {
-    var relleno=document.getElementById('favRelleno')
-    var vacio=document.getElementById('favVacio')
 
-    if(mostrarRelleno==='si'){
+function fav(mostrarRelleno) {
+    var relleno = document.getElementById('favRelleno')
+    var vacio = document.getElementById('favVacio')
+
+    if (mostrarRelleno === 'si') {
         vacio.style.display = 'none';
         relleno.style.display = 'block';
-    }else{
+    } else {
         vacio.style.display = 'block';
         relleno.style.display = 'none';
     }
 
-    }
+}
