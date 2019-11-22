@@ -36,7 +36,7 @@
                 </button>
                 <div class="collapse navbar-collapse col-6 " id="navbarNav">
                     <ul class="navbar-nav justify-content-around" style="width: 100%;">
-                        <li class="nav-item active ">
+                        <li class="nav-item">
                             <a class="nav-link text-black font-weight-bolder" href="index.html#categorias">Categorias</a>
                         </li>
                         <li class="nav-item">
@@ -47,10 +47,10 @@
                                 Servicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black font-weight-bolder" href="">Productos</a>
+                            <a class="nav-link text-black font-weight-bolder" href="/product.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black font-weight-bolder" href="#">Diseño</a>
+                            <a class="nav-link text-black font-weight-bolder" href="/notFound.html">Diseño</a>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +60,8 @@
                         <div class="col-8 d-flex justify-content-around  ">
                             <div class="row d-flex justify-content-between ">
                                 <span id="cart" class="text-black mr-2 handPointer" onclick="navegar('/checkout.html')">Cart</span>
-                                <span><i class="fas fa-cart-plus" style="color: black;"></i></span>
+                                <span><i class="fas fa-cart-plus handPointer" style="color: black;"
+                                        onclick="navegar('/checkout.html')"></i></span>
                             </div>
                             <span class="text-black ml-3 handPointer" onclick="navegar('/login.html')">Login</span>
                         </div>
@@ -259,49 +260,50 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <hr />
 
-        <!-- productos relacionados -->
-        <div class="mt-5">
-            <div>
-                <span class="textogris"> Los que compraron este producto también vieron:</span>
-            </div>
-            <div class="row mt-2">
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="card">
-                        <img src="/img/h1-product-8.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Pava</h5>
-                            <a href="#" class="btn btn-dark">Agregar al carrito</a>
+            <hr />
+
+            <!-- productos relacionados -->
+            <div class="mt-5">
+                <div>
+                    <span class="textogris"> Los que compraron este producto también vieron:</span>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="card">
+                            <img src="/img/h1-product-8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pava</h5>
+                                <a href="#" class="btn btn-dark">Agregar al carrito</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="card">
-                        <img src="/img/h6-product-51.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Toallas</h5>
-                            <a href="#" class="btn btn-dark">Agregar al carrito</a>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="card">
+                            <img src="/img/h6-product-51.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Toallas</h5>
+                                <a href="#" class="btn btn-dark">Agregar al carrito</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="card">
-                        <img src="/img/h1-product-5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Reloj</h5>
-                            <a href="#" class="btn btn-dark">Agregar al carrito</a>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="card">
+                            <img src="/img/h1-product-5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Reloj</h5>
+                                <a href="#" class="btn btn-dark">Agregar al carrito</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="card">
-                        <img src="/img/h6-product-48.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Pava</h5>
-                            <a href="#" class="btn btn-dark">Agregar al carrito</a>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="card">
+                            <img src="/img/h6-product-48.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pava</h5>
+                                <a href="#" class="btn btn-dark">Agregar al carrito</a>
+                            </div>
                         </div>
                     </div>
                 </div>

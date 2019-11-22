@@ -311,3 +311,18 @@ hr {
     border-style: inset;
     border-width: 1px;
 }
+
+
+/* not found */
+
+.cardError {
+    border: none;
+}
+
+.textError {
+    font-size: 16px;
+}
+
+.navBarLogo {
+    padding-bottom: 0;
+}

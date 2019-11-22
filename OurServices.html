@@ -37,7 +37,7 @@
                 </button>
                 <div class="collapse navbar-collapse col-6 " id="navbarNav">
                     <ul class="navbar-nav justify-content-around" style="width: 100%;">
-                        <li class="nav-item active ">
+                        <li class="nav-item">
                             <a class="nav-link text-black font-weight-bolder" href="index.html#categorias">Categorías</a>
                         </li>
                         <li class="nav-item">
@@ -50,7 +50,7 @@
                             <a class="nav-link text-black font-weight-bolder" href="product.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black font-weight-bolder" href="#">Diseño</a>
+                            <a class="nav-link text-black font-weight-bolder" href="/notFound.html">Diseño</a>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +60,7 @@
                         <div class="col-8 d-flex justify-content-around  ">
                             <div class="row d-flex justify-content-between ">
                                 <span class="text-black mr-2 handPointer" onclick="navegar('checkout.html')">Cart</span>
-                                <span><i class="fas fa-cart-plus" style="color: black;"></i></span>
+                                <span><i class="fas fa-cart-plus handPointer" style="color: black;" onclick="navegar('checkout.html')"></i></span>
                             </div>
                             <span class="text-black ml-3 handPointer" onclick="navegar('login.html')">Login</span>
                         </div>
@@ -218,6 +218,12 @@
                     <br>
                 </div>
             </div>
+        </div>
+        <!-- flecha estatica -->
+        <div class="mr-2 arrowUp" style="background: black;">
+            <a href="#contGral">
+                <i class="fas fa-arrow-up arrow"></i>
+            </a>
         </div>
         <br>
         <br>
